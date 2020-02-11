@@ -1,10 +1,15 @@
+<% if logged_in? %>
 <header class="mb-4">
-
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav">
-        <li class="dropdown-item"><%= link_to 'Logout', logout_path, method: :delete %></li>
+        <li class="dropdown-item">
+          <%= link_to 'Logout', logout_path, method: :delete %>
+          </li>
       </ul>
     </div>
   </nav>
 </header>
+<% else %>
+
+<% end %>
